@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-	"test": "node test.js"
+    "test": "./node_modules/.bin/istanbul cover test.js ./node_modules/.bin/codecov"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/cps847-group14-2020/ass2_leigh/issues"
   },
-  "homepage": "https://github.com/cps847-group14-2020/ass2_leigh#readme"
+  "homepage": "https://github.com/cps847-group14-2020/ass2_leigh#readme",
+  "dependencies": {
+    "istanbul": "^0.4.5"
+  },
+  "devDependencies": {
+    "codecov": "^3.6.5"
+  }
 }
