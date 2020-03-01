@@ -19,8 +19,6 @@ before_install:
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync -r --delete-after --quiet
-     ${TRAVIS_BUILD_DIR}
-     ${DEPLOY_USER}@${DEPLOY_SERVER}:/home/avm/courses/cps847/${DEPLOY_USER}
+  script: rsync -r --delete-after --quiet -a ./public_html l2silver@moon.scs.ryerson.ca:/home/avm/courses/cps847/l2silver
   on:
     branch: master
