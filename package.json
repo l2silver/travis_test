@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/istanbul cover test.js ./node_modules/.bin/codecov"
+    "test": "CODECOV_TOKEN=da87f3da-13c8-44eb-a5e9-58939a694ab1 ./node_modules/.bin/istanbul cover test.js ./node_modules/.bin/codecov"
   },
   "repository": {
     "type": "git",
