@@ -20,6 +20,6 @@
     "istanbul": "^0.4.5"
   },
   "devDependencies": {
-    "codecov": "^3.6.5"
+    "codecov": "^3.7.1"
   }
 }
